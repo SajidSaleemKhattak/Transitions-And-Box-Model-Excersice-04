@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX-MODEL AND TRANSITIONS</title>
+    <style>
+        .btn1{
+            padding: 6px 10px;
+        }
+        .btn2{
+            padding: 6px 10px;
+        }
+        .shadow{
+            background-color: green;
+            box-shadow: 2px 2px 2px black;
+            border-style: none;
+            padding: 6px 10px;
+            color: white;
+        }
+        .shadow:hover{
+            cursor:pointer;
+        }
+    .shadow:active{
+        box-shadow: 0px 0px 1px black;
+    }
+    .stretch{
+        background-color: green;
+        color: white;
+        width: 60px;
+        height: 40px;
+        transition: width 0.3s, height 0.3s;
+        margin-bottom: 20px;
+    }
+    .stretch:hover{
+        width: 200px;
+        height: 120px;
+    }
+    .one{
+        border-style: none;
+        background-color: green;
+        padding: 4px 10px;
+        color: white;
+        margin-right: 10px;
+        transition: margin-right 0.3s,padding 0.3s;
+    }
+    .two{
+        background-color: green;
+        padding: 4px 10px;
+        color: white;
+        border-style: none;
+        transition: padding 0.3s,margin-right 0.3s;
+    }
+    .three{
+        background-color: green;
+        padding: 4px 10px;
+        color: white;
+        border-style: none;
+        margin-left: 10px;
+        transition: margin-left 0.3s, padding 0.3s;
+    }
+    .one:hover{
+    margin-right: 50px;
+    padding:8px 15px; 
+    }
+    .two:hover{
+     margin-right: 50px;
+     padding:8px 15px; 
+    }
+    .three:hover{
+    margin-right: 50px;
+     padding:8px 15px; 
+    }
+    </style>
+</head>
+<body>
+    <button class="btn1">Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>    
+    <button class="btn2">Next</button>
+    <button class="shadow">Shadow</button>
+    <div class="stretch">
+    <p>Stretch</p>
+    </div>
+    <button class="one"><p>One</p></button>
+  <button class="two"><p>Two</p></button>
+  <button class="three"><p>Three</p></button>
+</body>
+</html>
